@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth scroll-pt-14;
+  }
+  body {
+    @apply font-Poppins capitalize;
+  }
+  a {
+    @apply duration-300 inline-block;
+  }
+ 
+}
+
+@layer components{
+  .btn {
+    @apply inline-block bg-light-yellow text-black py-3 px-8 rounded cursor-pointer text-base font-medium capitalize duration-300 hover:bg-yellow;
+  }
+}
+
+
+.swiper{
+  @apply pb-12
+}
+
+.swiper-pagination-bullet-active{
+  @apply bg-yellow
+}
+
+.swiper-slide-active .img {
+  @apply opacity-100 scale-100;
+}
+.swiper-slide-active .content {
+ @apply scale-100 opacity-100
+}

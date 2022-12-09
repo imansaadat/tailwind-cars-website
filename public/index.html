@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Css File -->
+    <link rel="stylesheet" href="./build/main.css" />
+    <!-- Title -->
+    <title>maxwheels</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      id="header"
+      class="fixed top-0 left-0 w-full z-20 py-4 bg-white duration-300"
+    >
+      <div class="max-w-[1240px] mx-auto px-5">
+        <nav class="flex justify-between items-center">
+          <div
+            id="menu"
+            class="block lg:hidden cursor-pointer text-3xl text-gray z-[10]"
+          >
+            <i class="w-7 h-7 fas fa-bars"></i>
+          </div>
+          <a href="#" class="text-2xl font-bold capitalize z-10"
+            ><span class="text-yellow">max</span>wheels</a
+          >
+          <ul class="hidden lg:flex items-center">
+            <li>
+              <a
+                href="#home"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#vehicles"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >vehicles</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#featured"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >featured</a
+              >
+            </li>
+            <li>
+              <a
+                href="#reviews"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >reviews</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >contact</a
+              >
+            </li>
+          </ul>
+          <div id="login-btn" class="z-10">
+            <button class="hidden lg:block btn">Login</button>
+            <div class="lg:hidden text-3xl cursor-pointer text-gray">
+              <i class="far fa-user"></i>
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="flex lg:hidden items-center justify-center w-full left-[-100%] text-center absolute duration-300 top-0 h-screen bg-white"
+        >
+          <ul class="space-y-4">
+            <li>
+              <a
+                href="#home"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#vehicles"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >vehicles</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#featured"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >featured</a
+              >
+            </li>
+            <li>
+              <a
+                href="#reviews"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >reviews</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-base text-black mx-5 hover:text-yellow"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Login Forms -->
+    <div id="login" class="hidden fixed top-0 left-0 w-full h-full bg-white/95 z-30 justify-center items-center animate-fadeIn">
+      <div id="close" class="absolute top-2 right-6 text-black text-3xl md:text-4xl cursor-pointer">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="w-[420px] shadow-md p-5 text-center bg-white border border-light-gray">
+        <h4 class="capitalize text-xl md:text-2xl mb-4 text-black font-medium">user login</h4>
+        <form action="#">
+          <div class="mb-4">
+            <input type="email" class="w-full md:text-lg text-black border border-light-gray rounded p-3 focus:outline-yellow" placeholder="Email" />
+          </div>
+          <div class="mb-4">
+            <input
+              type="password"
+              class="w-full md:text-lg text-black border border-light-gray rounded p-3 focus:outline-yellow"
+              placeholder="Password"
+            />
+          </div>
+          <div class="mb-4">
+            <p class="text-gray text-sm capitalize">Forget Your Password <a href="#" class="text-yellow">Click Here</a></p>
+          </div>
+          <div class="mb-4">
+            <input type="submit" value="Login" class="w-full btn" />
+          </div>
+          <div class="mb-4">
+            <p class="text-gray text-sm capitalize">Or Login With</p>
+          </div>
+          <div class="flex justify-between items-center mb-4">
+            <a href="#" class="btn w-full mx-1">Google</a>
+            <a href="#" class="btn w-full mx-1">Facebook</a>
+          </div>
+          <div class="mb-4">
+            <p class="text-gray text-sm capitalize">Don't Have An Account <a href="#" class="text-yellow">Create One</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <main>
+      <!-- Showcase -->
+      <section id="home" class="showcase pt-16 overflow-x-hidden">
+        <div class="max-w-[1240px] mx-auto px-5">
+          <div class="py-12 text-center">
+            <h2
+              class="showcase-parallax duration-300 uppercase text-3xl md:text-5xl lg:text-7xl mb-10 text-black font-semibold"
+              data-speed="-2"
+            >
+              find your car
+            </h2>
+            <img
+              data-speed="5"
+              class="showcase-parallax w-full duration-300"
+              src="../assets/home-img.png"
+              alt="find your car"
+            />
+            <a data-speed="7" href="#" class="home-parallax btn mt-5"
+              >explore cars</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="about" class="py-16 bg-light-gray">
+        <div class="max-w-[1240px] mx-auto px-5">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div
+              class="text-white bg-white flex items-center gap-5 p-5 shadow-md duration-300 group hover:bg-black"
+            >
+              <div
+                class="flex items-center justify-center w-16 h-16 text-2xl text-black rounded-full bg-light-gray duration-300 group-hover:bg-yellow"
+              >
+                <i class="fas fa-home"></i>
+              </div>
+              <div>
+                <h3
+                  class="text-yellow text-2xl font-semibold duration-300 group-hover:text-white"
+                >
+                  120+
+                </h3>
+                <p class="text-gray duration-300 group-hover:text-white">
+                  Branches
+                </p>
+              </div>
+            </div>
+            <div
+              class="text-white bg-white flex items-center gap-5 p-5 shadow-md duration-300 group hover:bg-black"
+            >
+              <div
+                class="flex items-center justify-center w-16 h-16 text-2xl text-black rounded-full bg-light-gray duration-300 group-hover:bg-yellow"
+              >
+                <i class="fas fa-car"></i>
+              </div>
+              <div>
+                <h3
+                  class="text-yellow text-2xl font-semibold duration-300 group-hover:text-white"
+                >
+                  770+
+                </h3>
+                <p class="text-gray duration-300 group-hover:text-white">
+                  Cars Sold
+                </p>
+              </div>
+            </div>
+            <div
+              class="text-white bg-white flex items-center gap-5 p-5 shadow-md duration-300 group hover:bg-black"
+            >
+              <div
+                class="flex items-center justify-center w-16 h-16 text-2xl text-black rounded-full bg-light-gray duration-300 group-hover:bg-yellow"
+              >
+                <i class="fas fa-users"></i>
+              </div>
+              <div>
+                <h3
+                  class="text-yellow text-2xl font-semibold duration-300 group-hover:text-white"
+                >
+                  520+
+                </h3>
+                <p class="text-gray duration-300 group-hover:text-white">
+                  Happy Clients
+                </p>
+              </div>
+            </div>
+            <div
+              class="text-white bg-white flex items-center gap-5 p-5 shadow-md duration-300 group hover:bg-black"
+            >
+              <div
+                class="flex items-center justify-center w-16 h-16 text-2xl text-black rounded-full bg-light-gray duration-300 group-hover:bg-yellow"
+              >
+                <i class="fas fa-car"></i>
+              </div>
+              <div>
+                <h3
+                  class="text-yellow text-2xl font-semibold duration-300 group-hover:text-white"
+                >
+                  100+
+                </h3>
+                <p class="text-gray duration-300 group-hover:text-white">
+                  News Cars
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Popular Vehicles -->
+      <section id="vehicles" class="py-12">
+        <div class="max-w-[1240px] mx-auto px-5">
+          <h2
+            class="text-center text-black font-semibold capitalize text-3xl md:text-4xl lg:text-5xl mb-7"
+          >
+            Popular
+            <span
+              class="relative after:absolute after:content-[''] after:w-full after:h-2 after:left-0 after:bottom-2 after:block after:bg-light-yellow after:z-[-1]"
+              >Vehicles</span
+            >
+          </h2>
+          <div class="swiper vehicles-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="text-center">
+                  <img
+                    src="../assets/vehicle-1.png"
+                    class="img opacity-50 scale-75 w-full duration-300"
+                    alt="new model"
+                  />
+                  <div class="content scale-0 duration-300">
+                    <h3 class="text-2xl text-black pb-2 font-medium">
+                      new model
+                    </h3>
+                    <div
+                      class="text-lg text-gray border-b-2 border-light-gray pb-3"
+                    >
+                      price :<span class="text-yellow ml-1 text-2xl"
+                        >$62,000</span
+                      >
+                    </div>
+                    <ul class="flex items-start justify-center py-3 flex-wrap">
+                      <li class="text-lg text-gray">
+                        new<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        2021<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        automatic<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        petrol<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        183mph<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn">check out</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="text-center">
+                  <img
+                    src="../assets/vehicle-2.png"
+                    class="img opacity-50 scale-75 w-full duration-300"
+                    alt="new model"
+                  />
+                  <div class="content scale-0 duration-300">
+                    <h3 class="text-2xl text-black pb-2 font-medium">
+                      new model
+                    </h3>
+                    <div
+                      class="text-lg text-gray border-b-2 border-light-gray pb-3"
+                    >
+                      price :<span class="text-yellow ml-1 text-2xl"
+                        >$62,000</span
+                      >
+                    </div>
+                    <ul class="flex items-start justify-center py-3 flex-wrap">
+                      <li class="text-lg text-gray">
+                        new<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        2021<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        automatic<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        petrol<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        183mph<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn">check out</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="text-center">
+                  <img
+                    src="../assets/vehicle-3.png"
+                    class="img opacity-50 scale-75 w-full duration-300"
+                    alt="new model"
+                  />
+                  <div class="content scale-0 duration-300">
+                    <h3 class="text-2xl text-black pb-2 font-medium">
+                      new model
+                    </h3>
+                    <div
+                      class="text-lg text-gray border-b-2 border-light-gray pb-3"
+                    >
+                      price :<span class="text-yellow ml-1 text-2xl"
+                        >$62,000</span
+                      >
+                    </div>
+                    <ul class="flex items-start justify-center py-3 flex-wrap">
+                      <li class="text-lg text-gray">
+                        new<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        2021<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        automatic<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        petrol<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        183mph<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn">check out</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="text-center">
+                  <img
+                    src="../assets/vehicle-4.png"
+                    class="img opacity-50 scale-75 w-full duration-300"
+                    alt="new model"
+                  />
+                  <div class="content scale-0 duration-300">
+                    <h3 class="text-2xl text-black pb-2 font-medium">
+                      new model
+                    </h3>
+                    <div
+                      class="text-lg text-gray border-b-2 border-light-gray pb-3"
+                    >
+                      price :<span class="text-yellow ml-1 text-2xl"
+                        >$62,000</span
+                      >
+                    </div>
+                    <ul class="flex items-start justify-center py-3 flex-wrap">
+                      <li class="text-lg text-gray">
+                        new<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        2021<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        automatic<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        petrol<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        183mph<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn">check out</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="text-center">
+                  <img
+                    src="../assets/vehicle-5.png"
+                    class="img opacity-50 scale-75 w-full duration-300"
+                    alt="new model"
+                  />
+                  <div class="content scale-0 duration-300">
+                    <h3 class="text-2xl text-black pb-2 font-medium">
+                      new model
+                    </h3>
+                    <div
+                      class="text-lg text-gray border-b-2 border-light-gray pb-3"
+                    >
+                      price :<span class="text-yellow ml-1 text-2xl"
+                        >$62,000</span
+                      >
+                    </div>
+                    <ul class="flex items-start justify-center py-3 flex-wrap">
+                      <li class="text-lg text-gray">
+                        new<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        2021<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        automatic<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        petrol<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        183mph<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn">check out</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="text-center">
+                  <img
+                    src="../assets/vehicle-6.png"
+                    class="img opacity-50 scale-75 w-full duration-300"
+                    alt="new model"
+                  />
+                  <div class="content scale-0 duration-300">
+                    <h3 class="text-2xl text-black pb-2 font-medium">
+                      new model
+                    </h3>
+                    <div
+                      class="text-lg text-gray border-b-2 border-light-gray pb-3"
+                    >
+                      price :<span class="text-yellow ml-1 text-2xl"
+                        >$62,000</span
+                      >
+                    </div>
+                    <ul class="flex items-start justify-center py-3 flex-wrap">
+                      <li class="text-lg text-gray">
+                        new<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        2021<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        automatic<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        petrol<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                      <li class="text-lg text-gray">
+                        183mph<i
+                          class="fas fa-circle text-yellow mx-2 text-xs"
+                        ></i>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn">check out</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Services -->
+      <section id="services" class="py-12">
+        <div class="max-w-[1240px] mx-auto px-5">
+          <h2
+            class="text-center text-black font-semibold capitalize text-3xl md:text-4xl lg:text-5xl mb-10"
+          >
+            our
+            <span
+              class="relative after:absolute after:content-[''] after:w-full after:h-2 after:left-0 after:bottom-2 after:block after:bg-light-yellow after:z-[-1]"
+              >services</span
+            >
+          </h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div
+              class="text-center border border-light-gray shadow-md p-5 rounded duration-300 group hover:bg-black"
+            >
+              <div
+                class="w-20 h-20 text-4xl bg-yellow text-black rounded-full flex items-center justify-center mx-auto"
+              >
+                <i class="fas fa-car"></i>
+              </div>
+              <h3
+                class="my-5 text-black text-2xl font-medium capitalize duration-300 group-hover:text-white"
+              >
+                Parts Repair
+              </h3>
+              <p
+                class="mb-5 text-gray text-base duration-300 group-hover:text-white"
+              >
+                Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Corporis, Nisi.
+              </p>
+              <a href="#" class="card__btn btn">Read More</a>
+            </div>
+            <div
+              class="text-center border border-light-gray shadow-md p-5 rounded duration-300 group hover:bg-black"
+            >
+              <div
+                class="w-20 h-20 text-4xl bg-yellow text-black rounded-full flex items-center justify-center mx-auto"
+              >
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3
+                class="my-5 text-black font-medium text-2xl capitalize duration-300 group-hover:text-white"
+              >
+                Car Selling
+              </h3>
+              <p
+                class="mb-5 text-gray text-base duration-300 group-hover:text-white"
+              >
+                Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Corporis, Nisi.
+              </p>
+              <a href="#" class="card__btn btn">Read More</a>
+            </div>
+            <div
+              class="text-center border border-light-gray shadow-md p-5 rounded duration-300 group hover:bg-black"
+            >
+              <div
+                class="w-20 h-20 text-4xl bg-yellow text-black rounded-full flex items-center justify-center mx-auto"
+              >
+                <i class="fas fa-car-crash"></i>
+              </div>
+              <h3
+                class="my-5 text-black font-medium text-2xl capitalize duration-300 group-hover:text-white"
+              >
+                Car Insurance
+              </h3>
+              <p
+                class="mb-5 text-gray text-base duration-300 group-hover:text-white"
+              >
+                Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Corporis, Nisi.
+              </p>
+              <a href="#" class="card__btn btn">Read More</a>
+            </div>
+            <div
+              class="text-center border border-light-gray shadow-md p-5 rounded duration-300 group hover:bg-black"
+            >
+              <div
+                class="w-20 h-20 text-4xl bg-yellow text-black rounded-full flex items-center justify-center mx-auto"
+              >
+                <i class="fas fa-car-battery"></i>
+              </div>
+              <h3
+                class="my-5 text-black font-medium text-2xl capitalize duration-300 group-hover:text-white"
+              >
+                Battery Replacement
+              </h3>
+              <p
+                class="mb-5 text-gray text-base duration-300 group-hover:text-white"
+              >
+                Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Corporis, Nisi.
+              </p>
+              <a href="#" class="card__btn btn">Read More</a>
+            </div>
+            <div
+              class="text-center border border-light-gray shadow-md p-5 rounded duration-300 group hover:bg-black"
+            >
+              <div
+                class="w-20 h-20 text-4xl bg-yellow text-black rounded-full flex items-center justify-center mx-auto"
+              >
+                <i class="fas fa-gas-pump"></i>
+              </div>
+              <h3
+                class="my-5 text-black font-medium text-2xl capitalize duration-300 group-hover:text-white"
+              >
+                Oil Change
+              </h3>
+              <p
+                class="mb-5 text-gray text-base duration-300 group-hover:text-white"
+              >
+                Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Corporis, Nisi.
+              </p>
+              <a href="#" class="card__btn btn">Read More</a>
+            </div>
+            <div
+              class="text-center border border-light-gray shadow-md p-5 rounded duration-300 group hover:bg-black"
+            >
+              <div
+                class="w-20 h-20 text-4xl bg-yellow text-black rounded-full flex items-center justify-center mx-auto"
+              >
+                <i class="fas fa-headset"></i>
+              </div>
+              <h3
+                class="my-5 text-black font-medium text-2xl capitalize duration-300 group-hover:text-white"
+              >
+                24/7 Support
+              </h3>
+              <p
+                class="mb-5 text-gray text-base duration-300 group-hover:text-white"
+              >
+                Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Corporis, Nisi.
+              </p>
+              <a href="#" class="card__btn btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- Featured Cars -->
+        <section id="featured" class="py-12">
+          <div class="max-w-[1240px] mx-auto px-5">
+            <h2
+            class="text-center text-black font-semibold capitalize text-3xl md:text-4xl lg:text-5xl mb-10"
+          >
+          <span
+              class="relative after:absolute after:content-[''] after:w-full after:h-2 after:left-0 after:bottom-2 after:block after:bg-light-yellow after:z-[-1]"
+              >Featured</span
+            >
+          Cars
+          </h2>
+            <!-- First Slide -->
+            <div class="swiper feature-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide px-1">
+                  <div class="border border-light-gray shadow-md p-5 rounded text-center">
+                    <img
+                      src="../assets/car-1.png"
+                      class="h-36 mx-auto"
+                      alt="new model"
+                    />
+                    <div>
+                      <h3 class="text-black text-2xl">new model</h3>
+                      <div class="py-3">
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star-half-alt text-yellow text-base"></i>
+                      </div>
+                      <div class="text-2xl text-black mb-4">$55,000</div>
+                      <a href="#" class="btn">check out</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide px-1">
+                  <div class="border border-light-gray shadow-md p-5 rounded text-center">
+                    <img
+                      src="../assets/car-2.png"
+                      class="h-36 mx-auto"
+                      alt="new model"
+                    />
+                    <div>
+                      <h3 class="text-black text-2xl">new model</h3>
+                      <div class="py-3">
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star-half-alt text-yellow text-base"></i>
+                      </div>
+                      <div class="text-2xl text-black mb-4">$55,000</div>
+                      <a href="#" class="btn">check out</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide px-1">
+                  <div class="border border-light-gray shadow-md p-5 rounded text-center">
+                    <img
+                      src="../assets/car-3.png"
+                      class="h-36 mx-auto"
+                      alt="new model"
+                    />
+                    <div>
+                      <h3 class="text-black text-2xl">new model</h3>
+                      <div class="py-3">
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star-half-alt text-yellow text-base"></i>
+                      </div>
+                      <div class="text-2xl text-black mb-4">$55,000</div>
+                      <a href="#" class="btn">check out</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide px-1">
+                  <div class="border border-light-gray shadow-md p-5 rounded text-center">
+                    <img
+                      src="../assets/car-4.png"
+                      class="h-36 mx-auto"
+                      alt="new model"
+                    />
+                    <div>
+                      <h3 class="text-black text-2xl">new model</h3>
+                      <div class="py-3">
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star-half-alt text-yellow text-base"></i>
+                      </div>
+                      <div class="text-2xl text-black mb-4">$55,000</div>
+                      <a href="#" class="btn">check out</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- Second slide -->
+            <div class="swiper feature-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide px-1">
+                  <div class="border border-light-gray shadow-md p-5 rounded text-center">
+                    <img
+                      src="../assets/car-5.png"
+                      class="h-36 mx-auto"
+                      alt="new model"
+                    />
+                    <div>
+                      <h3 class="text-black text-2xl">new model</h3>
+                      <div class="py-3">
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star-half-alt text-yellow text-base"></i>
+                      </div>
+                      <div class="text-2xl text-black mb-4">$55,000</div>
+                      <a href="#" class="btn">check out</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide px-1">
+                  <div class="border border-light-gray shadow-md p-5 rounded text-center">
+                    <img
+                      src="../assets/car-6.png"
+                      class="h-36 mx-auto"
+                      alt="new model"
+                    />
+                    <div>
+                      <h3 class="text-black text-2xl">new model</h3>
+                      <div class="py-3">
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star-half-alt text-yellow text-base"></i>
+                      </div>
+                      <div class="text-2xl text-black mb-4">$55,000</div>
+                      <a href="#" class="btn">check out</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide px-1">
+                  <div class="border border-light-gray shadow-md p-5 rounded text-center">
+                    <img
+                      src="../assets/car-7.png"
+                      class="h-36 mx-auto"
+                      alt="new model"
+                    />
+                    <div>
+                      <h3 class="text-black text-2xl">new model</h3>
+                      <div class="py-3">
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star-half-alt text-yellow text-base"></i>
+                      </div>
+                      <div class="text-2xl text-black mb-4">$55,000</div>
+                      <a href="#" class="btn">check out</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide px-1">
+                  <div class="border border-light-gray shadow-md p-5 rounded text-center">
+                    <img
+                      src="../assets/car-8.png"
+                      class="h-36 mx-auto"
+                      alt="new model"
+                    />
+                    <div>
+                      <h3 class="text-black text-2xl">new model</h3>
+                      <div class="py-3">
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star text-yellow text-base"></i>
+                        <i class="fas fa-star-half-alt text-yellow text-base"></i>
+                      </div>
+                      <div class="text-2xl text-black mb-4">$55,000</div>
+                      <a href="#" class="btn">check out</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <!-- Subscribe -->
+      <section id="subscribe" class="py-16 bg-subscribe md:bg-center bg-cover bg-no-repeat">
+        <div class="max-w-[1240px] mx-auto px-5">
+          <h2
+          class="text-center text-black font-semibold capitalize text-2xl md:text-4xl"
+        >
+        <span
+            class="relative after:absolute after:content-[''] after:w-full after:h-2 after:left-0 after:bottom-2 after:block after:bg-light-yellow after:z-[-1]"
+            >Subscribe</span
+          >
+          For Latest Updates
+        </h2>
+          <div class="text-center">
+            <p class="text-black text-base py-5">
+              Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+              Voluptatum, Suscipit.
+            </p>
+            <form action="#">
+              <div class="max-w-[650px] shadow-md rounded flex justify-center items-center mx-auto h-12 overflow-hidden">
+                <input
+                  type="email"
+                  class="w-full h-full text-base px-5 text-black capitalize outline-none"
+                  placeholder="enter your email"
+                />
+                <input
+                  type="submit"
+                  class="btn h-full"
+                  value="Subscribe"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+        <!-- Review -->
+        <section id="reviews" class="py-12">
+          <div class="max-w-[1240px] mx-auto px-5">
+            <h2
+            class="text-center text-black font-semibold capitalize text-2xl md:text-4xl mb-10"
+          >
+            Review
+            <span
+            class="relative after:absolute after:content-[''] after:w-full after:h-2 after:left-0 after:bottom-2 after:block after:bg-light-yellow after:z-[-1]"
+            >Client's</span
+          >
+          </h2>
+            <div class="swiper review-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide px-[2px]">
+                  <div class="content duration-300 p-5 rounded opacity-50 scale-90 border border-light-gray shadow-md">
+                    <img
+                      src="../assets/pic-1.png"
+                      class="w-16 h-16 rounded-full mx-auto"
+                      alt="john deo"
+                    />
+                    <div class="text-center">
+                      <p class="py-4 text-black text-sm">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Ipsam incidunt quod praesentium iusto id autem possimus
+                        assumenda at ut saepe.
+                      </p>
+                      <h3 class="font-semibold text-black text-xl mb-2">john deo</h3>
+                      <div class="review__stars text-yellow text-base">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="swiper-slide px-[2px]">
+                  <div class="content duration-300 p-5 rounded opacity-50 scale-90 border border-light-gray shadow-md">
+                    <img
+                      src="../assets/pic-2.png"
+                      class="w-16 h-16 rounded-full mx-auto"
+                      alt="john deo"
+                    />
+                    <div class="text-center">
+                      <p class="py-4 text-black text-sm">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Ipsam incidunt quod praesentium iusto id autem possimus
+                        assumenda at ut saepe.
+                      </p>
+                      <h3 class="font-semibold text-black text-xl mb-2">john deo</h3>
+                      <div class="review__stars text-yellow text-base">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="swiper-slide px-[2px]">
+                  <div class="content duration-300 p-5 rounded opacity-50 scale-90 border border-light-gray shadow-md">
+                    <img
+                      src="../assets/pic-3.png"
+                      class="w-16 h-16 rounded-full mx-auto"
+                      alt="john deo"
+                    />
+                    <div class="text-center">
+                      <p class="py-4 text-black text-sm">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Ipsam incidunt quod praesentium iusto id autem possimus
+                        assumenda at ut saepe.
+                      </p>
+                      <h3 class="font-semibold text-black text-xl mb-2">john deo</h3>
+                      <div class="review__stars text-yellow text-base">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="swiper-slide px-[2px]">
+                  <div class="content duration-300 p-5 rounded opacity-50 scale-90 border border-light-gray shadow-md">
+                    <img
+                      src="../assets/pic-4.png"
+                      class="w-16 h-16 rounded-full mx-auto"
+                      alt="john deo"
+                    />
+                    <div class="text-center">
+                      <p class="py-4 text-black text-sm">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Ipsam incidunt quod praesentium iusto id autem possimus
+                        assumenda at ut saepe.
+                      </p>
+                      <h3 class="font-semibold text-black text-xl mb-2">john deo</h3>
+                      <div class="review__stars text-yellow text-base">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="swiper-slide px-[2px]">
+                  <div class="content duration-300 p-5 rounded opacity-50 scale-90 border border-light-gray shadow-md">
+                    <img
+                      src="../assets/pic-5.png"
+                      class="w-16 h-16 rounded-full mx-auto"
+                      alt="john deo"
+                    />
+                    <div class="text-center">
+                      <p class="py-4 text-black text-sm">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Ipsam incidunt quod praesentium iusto id autem possimus
+                        assumenda at ut saepe.
+                      </p>
+                      <h3 class="font-semibold text-black text-xl mb-2">john deo</h3>
+                      <div class="review__stars text-yellow text-base">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="swiper-slide px-[2px]">
+                  <div class="content duration-300 p-5 rounded opacity-50 scale-90 border border-light-gray shadow-md">
+                    <img
+                      src="../assets/pic-6.png"
+                      class="w-16 h-16 rounded-full mx-auto"
+                      alt="john deo"
+                    />
+                    <div class="text-center">
+                      <p class="py-4 text-black text-sm">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Ipsam incidunt quod praesentium iusto id autem possimus
+                        assumenda at ut saepe.
+                      </p>
+                      <h3 class="font-semibold text-black text-xl mb-2">john deo</h3>
+                      <div class="review__stars text-yellow text-base">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+           <!-- Contact -->
+      <section id="contact" class="py-10">
+        <div class="max-w-[1240px] mx-auto px-5">
+          <div class="grid md:grid-cols-2 gap-5">
+            <div class="border border-light-gray shadow-md p-5 text-center rounded">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25905.073677568857!2d51.4939955!3d35.7475059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1656708278873!5m2!1sen!2s"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="border border-light-gray shadow-md p-5 text-center rounded">
+              <h3 class="mb-5 font-medium text-2xl text-black">Get In Touch</h3>
+              <form action="#">
+                <div class="mb-4">
+                  <input
+                    type="text"
+                    class="w-full border border-light-gray p-4 text-black rounded text-base capitalize focus:outline-yellow"
+                    placeholder="your name"
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="email"
+                    class="w-full border border-light-gray p-4 text-black rounded text-base capitalize focus:outline-yellow"
+                    placeholder="your email"
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="text"
+                    class="w-full border border-light-gray p-4 text-black rounded text-base capitalize focus:outline-yellow"
+                    placeholder="subject"
+                  />
+                </div>
+                <div class="mb-4">
+                  <textarea
+                    class="w-full border border-light-gray p-4 text-black rounded text-base capitalize focus:outline-yellow resize-none"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="your message"
+                  ></textarea>
+                </div>
+                <div class="mb-4">
+                  <input type="submit" class="btn" value="send message" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+     <!-- Footer -->
+     <footer class="bg-light-yellow py-10">
+      <div class="max-w-[1240px] mx-auto px-5">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div>
+            <h4 class="text-black text-xl mb-4">Our Branches</h4>
+            <ul>
+              <li>
+                <a href="#" class="text-gray text-base py-2 group">
+                  <i class="fas fa-map-marker-alt pr-1 text-black duration-300 group-hover:pr-4"></i> iran
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray text-base py-2 group">
+                  <i class="fas fa-map-marker-alt pr-1 text-black duration-300 group-hover:pr-4"></i> canada
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray text-base py-2 group">
+                  <i class="fas fa-map-marker-alt pr-1 text-black duration-300 group-hover:pr-4"></i> USA
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray text-base py-2 group">
+                  <i class="fas fa-map-marker-alt pr-1 text-black duration-300 group-hover:pr-4"></i> germany
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray tetext-gray text-base py-2 group">
+                  <i class="fas fa-map-marker-alt pr-1 text-black duration-300 group-hover:pr-4"></i> France
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-black text-xl mb-4">quick links</h4>
+            <ul>
+              <li>
+                <a href="#home" class="text-gray text-base py-2 group">
+                  <i class="fas fa-arrow-right pr-1 text-black duration-300 group-hover:pr-4"></i> home
+                </a>
+              </li>
+              <li>
+                <a href="#vehicles" class="text-gray text-base py-2 group">
+                  <i class="fas fa-arrow-right pr-1 text-black duration-300 group-hover:pr-4"></i> vehicles
+                </a>
+              </li>
+              <li>
+                <a href="#services" class="text-gray text-base py-2 group">
+                  <i class="fas fa-arrow-right pr-1 text-black duration-300 group-hover:pr-4"></i> services
+                </a>
+              </li>
+              <li>
+                <a href="#featured" class="text-gray text-base py-2 group">
+                  <i class="fas fa-arrow-right pr-1 text-black duration-300 group-hover:pr-4"></i> featured
+                </a>
+              </li>
+              <li>
+                <a href="#reviews" class="text-gray text-base py-2 group">
+                  <i class="fas fa-arrow-right pr-1 text-black duration-300 group-hover:pr-4"></i> reviews
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="text-gray text-base py-2 group">
+                  <i class="fas fa-arrow-right pr-1 text-black duration-300 group-hover:pr-4"></i> contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-black text-xl mb-4">contact info</h4>
+            <ul>
+              <li>
+                <a href="#" class="text-gray text-base py-2 group">
+                  <i class="fas fa-phone pr-1 text-black duration-300 group-hover:pr-4"></i> +98 9129323358</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray text-base py-2 group">
+                  <i class="fas fa-envelope pr-1 text-black duration-300 group-hover:pr-4"></i> e.saadat72@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray text-base py-2 group">
+                  <i class="fas fa-map-marker-alt pr-1 text-black duration-300 group-hover:pr-4"></i> Iran,Tehran</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-black text-xl mb-4">contact info</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/eslamsaadat"
+                  target="_blank"
+                  class="text-gray text-base py-2 group"
+                >
+                  <i class="fab fa-github pr-1 text-black duration-300 group-hover:pr-4"></i> github
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="text-gray text-base py-4 group">
+                  <i class="fab fa-instagram pr-1 text-black duration-300 group-hover:pr-4"></i> instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/eslamsaadat"
+                  target="_blank"
+                  class="text-gray text-base py-2 group"
+                >
+                  <i class="fab fa-linkedin pr-1 text-black duration-300 group-hover:pr-4"></i> linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t-neutral-400 border-t text-center py-5 mt-5 text-base text-black">
+          developed by <span>Eslam Saadat (Iman)</span> and designed by
+          <span>mr. web designer</span>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>
